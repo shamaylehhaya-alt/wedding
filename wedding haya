@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --max-width: 760px;
+            --accent: #111;
+            --muted: #6b6b6b;
+            --bg: #f2f0ed;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Merriweather", Georgia, serif;
+            background: var(--bg);
+            color: var(--accent);
+            display: flex;
+            justify-content: center;
+            padding: 18px 8px;
+        }
+
+        main {
+            width: 100%;
+            max-width: var(--max-width);
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        section {
+            padding: 24px 16px;
+            text-align: center;
+        }
+
+        section+section {
+            border-top: none;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        h1.wedding-word,
+        h2.section-title {
+            font-family: "Great Vibes", cursive;
+            font-size: 64px;
+            font-weight: 400;
+            margin-bottom: 4px;
+            line-height: 1.1;
+        }
+
+        .of-line {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        .names {
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+            font-size: 18px;
+        }
+
+        .date-place {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .photo-wrap {
+            background: #eee;
+        }
+
+        .photo {
+            width: 100%;
+            display: block;
+        }
+
+        .details-text {
+            max-width: 560px;
+            margin: 0 auto 4px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .detail-label {
+            font-weight: 700;
+            margin-top: 12px;
+            font-size: 17px;
+        }
+
+        .detail-value {
+            margin: 4px 0;
+            font-size: 16px;
+            color: var(--muted);
+        }
+
+        .detail-value a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .detail-value a:hover {
+            text-decoration: underline;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            text-align: left;
+            margin: 8px auto;
+            max-width: 500px;
+            line-height: 1.5;
+        }
+
+        .timeline-title {
+            font-family: "Great Vibes", cursive;
+            font-size: 34px;
+            margin: 12px 0 8px;
+            text-align: center;
+        }
+
+        .time {
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-block;
+            width: 80px;
+        }
+
+        /* Countdown */
+        .countdown-title {
+            font-family: "Great Vibes", cursive;
+            font-size: 52px;
+            margin-bottom: 8px;
+        }
+
+        .countdown-sub {
+            font-size: 26px;
+            font-family: "Great Vibes", cursive;
+            margin-bottom: 4px;
+        }
+
+        .countdown-box {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .cd-item {
+            text-align: center;
+            min-width: 60px;
+        }
+
+        .cd-num {
+            font-weight: 700;
+            font-size: 28px;
+            color: #fff;
+            padding: 8px 0;
+            border-radius: 8px;
+            background-color: #000;
+            min-width: 60px;
+        }
+
+        .cd-label {
+            font-size: 11px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        /* Adjust for mobile */
+        @media(max-width:420px) {
+            h1.wedding-word,
+            h2.section-title {
+                font-size: 38px;
+            }
+
+            .countdown-title {
+                font-size: 32px;
+            }
+
+            .countdown-sub {
+                font-size: 18px;
+            }
+
+            .cd-item {
+                min-width: 50px;
+            }
+
+            .cd-num {
+                font-size: 24px;
+                padding: 6px 0;
+                min-width: 50px;
+            }
+
+            .cd-label {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <!-- Hero -->
+        <section>
+            <div class="subtitle">THE</div>
+            <h1 class="wedding-word">Wedding</h1>
+            <div class="of-line">OF</div>
+            <div class="names">IBRAHIM AND HAYA</div>
+            <div class="date-place">October 20, 2025 - OPAL HOTEL, AMMAN</div>
+        </section>
+
+        <!-- Photo -->
+        <section class="photo-wrap">
+            <img src="img1/haya1.jpg" class="photo" alt="Ibrahim and Haya">
+        </section>
+
+        <!-- Wedding Details -->
+        <section>
+            <h2 class="section-title">Wedding Details</h2>
+            <p class="details-text">
+                We can’t wait to celebrate with you! Here’s everything you need to know for the big day—times and
+                location. See you there!
+            </p>
+        </section>
+
+        <!-- Venue -->
+        <section>
+            <h2 class="section-title">Wedding Venue</h2>
+            <div class="detail-label">Arrival time:</div>
+            <div class="detail-value">20 October 2025 at 07:00</div>
+            <div class="detail-value">Ceremony starts at 07:30</div>
+            <div class="detail-label">Venue address:</div>
+            <div class="detail-value">OPAL HOTEL, AMMAN</div>
+        </section>
+
+        <!-- Timeline -->
+        <section id="timeline">
+            <h2 class="section-title">Schedule</h2>
+
+            <div class="timeline-title">Groom's house</div>
+            <div class="timeline-item"><span class="time">5:00 PM</span> Guest Arrives</div>
+            <div class="timeline-item"><span class="time">5:30 PM</span> The Zafeh Begins</div>
+
+            <div class="timeline-title">Bride's house</div>
+            <div class="timeline-item"><span class="time">6:30 PM</span> Groom Arrives and the Zafeh begins</div>
+
+            <div class="timeline-title">Venue</div>
+            <div class="timeline-item">
+                <span class="time">7:30 PM</span> Reception Starts<br>
+                Welcome to the party! Guests seated.
+            </div>
+            <div class="timeline-item">
+                <span class="time">8:00 PM</span> Party Begins<br>
+                Bring the tissues... and then your dance shoes.
+            </div>
+        </section>
+
+        <!-- Countdown -->
+        <section id="countdown">
+            <h2 class="countdown-title">The countdown has</h2>
+            <div class="countdown-sub">begun</div>
+            <p>We are so excited</p>
+
+            <div class="countdown-box">
+                <div class="cd-item">
+                    <div class="cd-num" id="days">0</div>
+                    <div class="cd-label">Days</div>
+                </div>
+                <div class="cd-item">
+                    <div class="cd-num" id="hours">0</div>
+                    <div class="cd-label">Hours</div>
+                </div>
+                <div class="cd-item">
+                    <div class="cd-num" id="minutes">0</div>
+                    <div class="cd-label">Minutes</div>
+                </div>
+                <div class="cd-item">
+                    <div class="cd-num" id="seconds">0</div>
+                    <div class="cd-label">Seconds</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="details-text">
+                We're thrilled to share our special day with you! Should you have any questions or need further details,
+                feel free to reach out to us. Your presence means the world, and we want to ensure you have all the
+                information you need for a delightful celebration. Looking forward to celebrating together!
+            </p>
+            <div class="detail-label">Bride:</div>
+            <div class="detail-value"><a href="tel:0775629511">0775629511</a></div>
+            <div class="detail-label">Groom:</div>
+            <div class="detail-value"><a href="tel:0777201197">0777201197</a></div>
+        </section>
+
+    </main>
+
+    <!-- Countdown Script -->
+    <script>
+        const weddingDate = new Date("October 20, 2025 07:30:00").getTime();
+        const daysEl = document.getElementById("days");
+        const hoursEl = document.getElementById("hours");
+        const minutesEl = document.getElementById("minutes");
+        const secondsEl = document.getElementById("seconds");
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = weddingDate - now;
+            if (diff <= 0) {
+                daysEl.textContent = hoursEl.textContent = minutesEl.textContent = secondsEl.textContent = 0;
+                return;
+            }
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            daysEl.textContent = days;
+            hoursEl.textContent = hours;
+            minutesEl.textContent = minutes;
+            secondsEl.textContent = seconds;
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
